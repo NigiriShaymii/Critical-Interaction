@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Sansita');
+
+* {
+  margin: 0;
+padding: 0;
+}
+
+body {
+  width: 100%;
+	height: 100%;
+	margin:0;
+	background-color: #e2edff;
+	line-height: 1.8em;
+	font-family: 'Sansita', sans-serif;
+  background: linear-gradient(to bottom,  red, blue);
+}
+
+.mar {
+  margin: 0 300px;
+}
+
+.bord {
+  border: 0;
+}
+
+.pad {
+  padding: 50px;
+}
+
+h1 {
+  text-align: center;
+  padding: 25px 0 50px 0;
+  background: linear-gradient(to bottom,  pink, rgba(255,0,0,0));
+  color: yellow;
+}
+
+h2 {
+  font-size: 50px;
+  padding: 25px 0 50px 0;
+  color: white;
+}
+
+p {
+  color: white;
+}
+
+li {
+  font-size: 50px;
+  padding: 25px;
+  color: white;
+}
+
+img {
+  width: 80%;
+  padding: 50px;
+}

@@ -3,41 +3,44 @@
 
 <head>
   <title> Monterey </title>
+  <link rel="stylesheet" type="text/css" href="css/style3.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+
+  <nav id="navbar">
+
+    <ul>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn"> About Monterey </a>
+        <div class="dropdown-content">
+          <a href="https://nigirishaymii.github.io/Critical-Interaction/Alphabet/Kindergarden.html" class="button"> What is Monterey? </a>
+          <a href="https://nigirishaymii.github.io/Critical-Interaction/Kid/kid.html" class="button"> Our motto </a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn"> Services </a>
+        <div class="dropdown-content">
+          <a href="https://nigirishaymii.github.io/Critical-Interaction/Kid/kid.html" class="button"> Services </a>
+          <a href="https://nigirishaymii.github.io/Critical-Interaction/Alphabet/Kindergarden.html" class="button"> Our duty </a>
+          <a href="https://nigirishaymii.github.io/Critical-Interaction/index.html" class="button"> Meet the mayor </a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn"> The People </a>
+        <div class="dropdown-content">
+          <a href="https://nigirishaymii.github.io/Critical-Interaction/Alphabet/Kindergarden.html" class="button"> Visitors </a>
+          <a href="https://nigirishaymii.github.io/Critical-Interaction/PhotoBeach/Monterey.html" class="button"> Entertainment </a>
+          <a href="https://nigirishaymii.github.io/Critical-Interaction/Kid/kid.html" class="button"> Restaurants </a>
+          <a href="https://nigirishaymii.github.io/Critical-Interaction/index.html" class="button"> Tour Spots </a>
+          <a href="https://nigirishaymii.github.io/Critical-Interaction/Alphabet/Kindergarden.html" class="button"> Aquarium </a>
+        </div>
+      </li>
+      <li><a href="https://nigirishaymii.github.io/Critical-Interaction/index.html" class="button"> Contact </a></li>
+    </ul>
+  </nav>
 
   <head>
 
   <body>
-    <nav id="navbar">
-
-      <ul>
-        <li class="dropdown">
-          <a href="javascript:void(0)" class="dropbtn"> About Monterey </a>
-          <div class="dropdown-content">
-            <a href="https://nigirishaymii.github.io/Critical-Interaction/Alphabet/Kindergarden.html" class="button"> What is Monterey? </a>
-            <a href="https://nigirishaymii.github.io/Critical-Interaction/Kid/kid.html" class="button"> Our motto </a>
-          </div>
-        </li>
-        <li class="dropdown">
-          <a href="javascript:void(0)" class="dropbtn"> Services </a>
-          <div class="dropdown-content">
-            <a href="https://nigirishaymii.github.io/Critical-Interaction/Kid/kid.html" class="button"> Services </a>
-            <a href="https://nigirishaymii.github.io/Critical-Interaction/Alphabet/Kindergarden.html" class="button"> Our duty </a>
-            <a href="https://nigirishaymii.github.io/Critical-Interaction/index.html" class="button"> Meet the mayor </a>
-          </div>
-        </li>
-        <li class="dropdown">
-          <a href="javascript:void(0)" class="dropbtn"> Services </a>
-          <div class="dropdown-content">
-            <a href="https://nigirishaymii.github.io/Critical-Interaction/Alphabet/Kindergarden.html" class="button"> Visitors </a>
-            <a href="https://nigirishaymii.github.io/Critical-Interaction/PhotoBeach/Monterey.html" class="button"> Entertainment </a>
-            <a href="https://nigirishaymii.github.io/Critical-Interaction/Kid/kid.html" class="button"> Restaurants </a>
-            <a href="https://nigirishaymii.github.io/Critical-Interaction/index.html" class="button"> Tour Spots </a>
-            <a href="https://nigirishaymii.github.io/Critical-Interaction/Alphabet/Kindergarden.html" class="button"> Aquarium </a>
-          </div>
-        </li>
-        <li><a href="https://nigirishaymii.github.io/Critical-Interaction/index.html" class="button"> Contact </a></li>
-      </ul>
-    </nav>
 
     <!-- Slideshow container -->
     <div class="slideshow-container">
@@ -45,25 +48,25 @@
       <!-- Full-width images with number and caption text -->
       <div class="mySlides fade">
         <div class="numbertext">1 / 4</div>
-        <img src="images/Bird Heaven Rock 2.jpg" style="width:100%">
+        <img src="image/BirdHeavenRock2.jpg" width=100%>
         <div class="text"> Bird Heaven Rock</div>
       </div>
 
       <div class="mySlides fade">
         <div class="numbertext">2 / 4</div>
-        <img src="images/Deep Reflection 4.jpg" style="width:100%">
+        <img src="image/DeepReflection4.jpg" width=100%>
         <div class="text">Monterey Bay Aquarium Deep Reef</div>
       </div>
 
       <div class="mySlides fade">
         <div class="numbertext">3 / 4</div>
-        <img src="images/Emerging Islands.jpg" style="width:100%">
+        <img src="image/Emerging Islands.jpg" width=100%>
         <div class="text">Rocky Docks</div>
       </div>
 
       <div class="mySlides fade">
         <div class="numbertext">4 / 4</div>
-        <img src="images/IMG_0780.jpg" style="width:100%">
+        <img src="image/IMG_0780.jpg" width=100%>
         <div class="text">The Waterfall</div>
       </div>
 
@@ -80,6 +83,39 @@
       <span class="dot" onclick="currentSlide(3)"></span>
       <span class="dot" onclick="currentSlide(4)"></span>
     </div>
+
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1
+        }
+        if (n < 1) {
+          slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
 
     <h1> Our mission </h1>
     <p> Monterey is a symbol of life, festivity, and community. We florish the life style
